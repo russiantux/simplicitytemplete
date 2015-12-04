@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Simplicity Website Templete, v1.0 , made by Viktor Lazarev (RussianTux) -->
+<!-- https://github.com/russiantux/simplicitytemplete -->
+
+
+<!--THIS SITE IS UNDER THE MIT LICENSE, YOU MUST HAVE A LINK SOMEWHERE THAT LINKS BACK TO THE GITHUB PAGE OF THE ORIGINAL PAGE IN QUESTION.("simplicitytemplete")
+//The MIT License (MIT)
+//
+//Copyright (c) 2015 
+//
+//Permission is hereby granted, free of charge, to any person obtaining a copy
+//of this software and associated documentation files (the "Software"), to deal
+//in the Software without restriction, including without limitation the rights
+//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//copies of the Software, and to permit persons to whom the Software is
+//furnished to do so, subject to the following conditions:
+//
+//The above copyright notice and this permission notice shall be included in all
+//copies or substantial portions of the Software.
+//
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//SOFTWARE. 
+-->
+
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<title>simplicity.</title>
+	
+	<style type "text/css">
+		* { 
+			margin: 0;
+			padding:0;
+		  }
+	@font-face {
+    font-family:Marvel-Bold;
+     src: url("fonts/Marvel-Bold.ttf");
+     } 
+	.background-wrap{
+			position: fixed;
+			z-index: -1000;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			top: 0;
+			left: 0;	
+	}
+	#home{
+	font-family:Marvel-Bold;
+	}
+	.buttons {
+		position : center;
+		width: 100%;
+		min-height: 100%;
+		z-index: 100%;
+	}
+	.content {
+		position : absolute;
+		width: 100%;
+		min-height: 100%;
+		z-index: 100%;
+		background-color: rgba(0,0,0,0.4)
+	}
+	.content h1 {
+		text-align: center;
+		font-size: 90px;
+		font-weight: 300;
+		color:#212121;
+		padding-top: 15%;
+		margin-bottom: 10px;
+	}
+	.content p {
+		text-align: center;
+		font-size: 30px;
+		letter-spacing: 3px;
+		color: #aaa;
+	}
+	.copyright c {
+		position : fixed;
+		width: 100%;
+		min-height: 100%;
+		z-index: 100%;
+		font-size: 10px;
+		letter-spacing: 3px;
+		color: #aaa;
+		
+		
+	}
+	/***************************
+	    BootStrap Formating
+	***************************/
+	.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	font: Marvel-Bold;
+		}
+	.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+	}
+	.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+	font: Marvel-Bold;
+	}
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+	font: Marvel-Bold;
+	}
+	.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+	font: Marvel-Bold;
+	}
+	.btn.outline {
+    background: none;
+    padding: 12px 22px;
+	}
+	.btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: #0099cc;
+	}
+	.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc;
+    border-color: #33a6cc;
+	}
+	.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+	}
+	/***************************
+	 End of BootStrap Formating
+	***************************/
+	</style>
+	
+	<script>
+	window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+	});
+	</script>
+	</head>
+	<body>
+	
+	<div id="load_screen"><div id="loading"><i class="fa fa-refresh"></i></div></div>
+
+		<div class="background-wrap">
+			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+<!-- This is where you would place you background video, you can use a link or place it directly on your server -->
+				<source src="media\background.mp4" type="video/mp4">
+				<!-- This is the error message when the video format is not supported in your browser -->
+				video is kill
+			</video>
+		</div>
+		
+		<div class="content" id="home">
+<!-- This is where where you place your title of the page and a some text below it, this is essentaly the meat and beans of the site -->
+			<h1>simplicity.</h1>
+			<p>a simple web landing page for basic needs.</p>
+	 	</div>
+		 
+<!-- These are the buttons, you may custimize the position, text, and to whatever it links to. -->	 
+<div class="buttons">
+ <div style="position:fixed; TOP:48.8%; LEFT:34%; font: Marvel-Bold;" text-align: center;>
+	<a href="https://google.com" target="_blank">
+	<button type="button" class="btn btn-primary btn-lg outline" >button1</button>
+	</a>
+ </div>
+  <div style="position:fixed; TOP:48.8%; LEFT:42%; font: Marvel-Bold;">
+  	<a href="https://google.com" target="_blank">
+	<button type="button" class="btn btn-primary btn-lg outline">button2</button>
+	</a>
+ </div>
+  <div style="position:fixed; TOP:48.8%; LEFT:50%; font: Marvel-Bold;">
+  	<a href="https://google.com" target="_blank">
+	<button type="button" class="btn btn-primary btn-lg outline">button3</button>
+	</a>
+ </div>
+  <div style="position:fixed; TOP:48.8%; LEFT:58%; font: Marvel-Bold;">
+  	<a href="https://google.com" target="_blank">
+	<button type="button" class="btn btn-primary btn-lg outline">button4</button>
+	</a>
+ </div>
+ </div>
+ 
+  <div class="copyright" id="copyright" style="position:fixed; TOP:97%; LEFT:35%;">
+<!-- This is the footer, you may change anything but the github link, as it is required to keep it there in regards to the MIT Licence. -->	  
+ 	<c>copyright 2015 [name] ~ all rights reserved | like the design? get it <a href="https://github.com/russiantux/simplicitytemplete" target="_blank">here.</a> </c>
+ </div>
+ 
+
+</body>
+</html>
