@@ -1,6 +1,7 @@
 <div style="text-align: center"><a href="http://russiantux.ml/simplicity/simplicity_showcase.html" target="_blank"><img src="http://i.imgur.com/HnlS9gV.png" width="500" /></a></div>
 A simple page/templete for people who want to look professional and simplistic.
 ~PELASE NOTE, THIS CODE IS VERY MESSY AND CRUDE, IT WILL BE IMPROVED AND REFINED OVER TIME.~
+<p>
 ---
 <div style="text-align: center"><img src="http://i.imgur.com/EGfhKId.png" width="300" /></div>
  The website template features:
