@@ -40,13 +40,12 @@
 	<body>
 		<div id="load_screen"><div id="loading"><i class="fa fa-refresh"></i></div></div>
 
-		<div class="background-wrap">
-			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-				<!-- Background video -->
-				<source src="assets/mp4/background.mp4" type="video/mp4">
-				This video format not supported in your browser.
-			</video>
-		</div>
+		<div class="background-element background-tint"></div>
+		<video class="background-element background-video" preload="auto" autoplay="true" loop="loop" muted="muted">
+			<!-- Background video -->
+			<source src="assets/mp4/background.mp4" type="video/mp4">
+			This video format not supported in your browser.
+		</video>
 
 		<div class="content">
 			<!-- Title and text -->
@@ -56,29 +55,13 @@
 
 		<!-- Buttons -->
 		<div class="buttons">
-			<div>
-				<a href="https://google.com" target="_blank">
-					<button type="button" class="btn btn-primary btn-lg outline" >button1</button>
-				</a>
-			</div>
-			<div>
-				<a href="https://google.com" target="_blank">
-					<button type="button" class="btn btn-primary btn-lg outline">button2</button>
-				</a>
-			</div>
-			<div>
-				<a href="https://google.com" target="_blank">
-					<button type="button" class="btn btn-primary btn-lg outline">button3</button>
-				</a>
-			</div>
-			<div>
-				<a href="https://google.com" target="_blank">
-					<button type="button" class="btn btn-primary btn-lg outline">button4</button>
-				</a>
-			</div>
+			<a href="https://google.com" target="_blank" class="btn btn-primary btn-lg outline">button 1</a>
+			<a href="https://google.com" target="_blank" class="btn btn-primary btn-lg outline">button 2</a>
+			<a href="https://google.com" target="_blank" class="btn btn-primary btn-lg outline">button 3</a>
+			<a href="https://google.com" target="_blank" class="btn btn-primary btn-lg outline">button 4</a>
 		</div>
 
-		<div class="copyright" id="copyright" style="position:fixed; TOP:97%; LEFT:35%;">
+		<div class="copyright">
 			<!-- Footer - please keep Github link -->
 			<p>copyright 2015 [name] ~ all rights reserved | like the design? get it <a href="https://github.com/russiantux/simplicitytemplete" target="_blank">here.</a></p>
 		</div>
